@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Collision Test</title>
+        <title>2D Elastic Collision Simulator</title>
         <style>
           @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
         </style>
@@ -11,21 +11,22 @@
     <body>
         <script src="script.js"></script>
         <h1 class="title"> <span class="header">Set the properties then click run:</span></h1>
+        <h1 class="title" id="mainTitle">Collision Simulator</h1>
 
         <form id="collisionForm">
             <div class="box1Create">
                 <h3><span class="header">Box 1</span></h3>
-                Input mass (1-10kg):
-                <input type="number" id="mass1" required min="1" max="55"> <br>
-                Input velocity (m/s):
+                Input mass (1-15kg):
+                <input type="number" id="mass1" required min="1" max="15"> <br>
+                Input velocity (0-30m/s):
                 <input type="number" id="velocity1" required min="0" max="30">
             </div>
 
             <div class="box2Create">
                 <h3><span class="header">Box 2</span></h3>
-                Input mass (1-10kg):
+                Input mass (1-15kg):
                 <input type="number" id="mass2" required min="1" max="15"> <br>
-                Input velocity (m/s):
+                Input velocity (0-30m/s):
                 <input type="number" id="velocity2" required min="0" max="30">
             </div>
 
